@@ -30,7 +30,7 @@ namespace GestorOcorrencias
         {
             if (totalCatastrofes < MAX)
             {
-                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes, nome);
+                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome);
                 totalCatastrofes++;
                 return totalCatastrofes;
             }
@@ -41,7 +41,7 @@ namespace GestorOcorrencias
         {
             if (totalCatastrofes < MAX)
             {
-                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes, nome, desc);
+                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome, desc);
                 totalCatastrofes++;
                 return totalCatastrofes;
             }

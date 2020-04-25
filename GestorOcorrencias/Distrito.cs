@@ -1,13 +1,13 @@
 ﻿using System;
 namespace GestorOcorrencias
 {
-    public class Catastrofe
+    public class Distrito
     {
+
         #region ESTADO
 
         static int id;
         static string nome;
-        static string descricao;
 
         #endregion
 
@@ -15,17 +15,10 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
-        public Catastrofe(int idParam, string nomeParam)
+        public Distrito(int idParam, string nomeParam)
         {
             id = idParam;
             nome = nomeParam;
-        }
-
-        public Catastrofe(int idParam, string nomeParam, string desc)
-        {
-            id = idParam;
-            nome = nomeParam;
-            descricao = desc;
         }
 
         #endregion
