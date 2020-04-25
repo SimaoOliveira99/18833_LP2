@@ -1,0 +1,5 @@
+/home/simaooliveira/ipca/lp2/teste/gestorOcorrencias/GestorOcorrencias/bin/Debug/GestorOcorrencias.exe
+/home/simaooliveira/ipca/lp2/teste/gestorOcorrencias/GestorOcorrencias/bin/Debug/GestorOcorrencias.pdb
+/home/simaooliveira/ipca/lp2/teste/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.csprojAssemblyReference.cache
+/home/simaooliveira/ipca/lp2/teste/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.exe
+/home/simaooliveira/ipca/lp2/teste/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.pdb

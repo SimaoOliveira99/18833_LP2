@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{7692CE29-2DCA-488B-B685-A55C9C9BA1B8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ocorrencia.cs">
+    <Files>
+      <File FileName="Program.cs" Line="8" Column="10" />
+      <File FileName="Ocorrencias.cs" Line="65" Column="1" />
+      <File FileName="Ocorrencia.cs" Line="94" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GestorOcorrencias" expanded="True">
+            <Node name="GestorOcorrencias" expanded="True">
+              <Node name="Ocorrencia.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GestorOcorrencias FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
