@@ -23,8 +23,6 @@ namespace GestorOcorrencias
 
             #endregion
 
-            Console.WriteLine("ENTROU");
-            Console.WriteLine("FIM");
         }
     }
 }
