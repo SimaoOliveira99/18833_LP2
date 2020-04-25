@@ -39,6 +39,10 @@
     <Compile Include="Pessoa.cs" />
     <Compile Include="Obito.cs" />
     <Compile Include="Ferido.cs" />
+    <Compile Include="Catastrofe.cs" />
+    <Compile Include="Catastrofes.cs" />
+    <Compile Include="Distrito.cs" />
+    <Compile Include="Distritos.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

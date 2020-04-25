@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{7692CE29-2DCA-488B-B685-A55C9C9BA1B8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Distritos.cs">
     <Files>
-      <File FileName="Program.cs" Line="25" Column="1" />
+      <File FileName="Program.cs" Line="29" Column="1" />
       <File FileName="Pessoa.cs" Line="23" Column="31" />
-      <File FileName="Ocorrencias.cs" Line="69" Column="32" />
-      <File FileName="Ocorrencia.cs" Line="207" Column="45" />
+      <File FileName="Ocorrencias.cs" Line="20" Column="24" />
+      <File FileName="Ocorrencia.cs" Line="114" Column="10" />
       <File FileName="Obito.cs" Line="14" Column="24" />
       <File FileName="Ferido.cs" Line="27" Column="10" />
+      <File FileName="Catastrofe.cs" Line="18" Column="57" />
+      <File FileName="Construtores.cs" Line="60" Column="13" />
+      <File FileName="Distrito.cs" Line="11" Column="1" />
+      <File FileName="Distritos.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GestorOcorrencias" expanded="True">
             <Node name="GestorOcorrencias" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Distritos.cs" selected="True" />
             </Node>
           </Node>
         </State>

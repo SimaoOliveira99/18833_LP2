@@ -7,6 +7,7 @@ namespace GestorOcorrencias
         public static void Main(string[] args)
         {
             Ocorrencias ocorrencias = new Ocorrencias();
+            Catastrofes catastrofes = new Catastrofes();
 
             #region DUMMIE_DATA
 

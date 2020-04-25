@@ -19,17 +19,6 @@ namespace GestorOcorrencias
 
         #region METODOS
 
-        #region INDEXADORES
-
-        /*public Ocorrencias this[int i]
-        {
-            get { return ocorrencias[i]; }
-            //FIXME validar se a posição já n está ocupada, se nao estiver alterar senao nao alterar
-            set { ocorrencias[i] = new Ocorrencia(value); totalOcorrencias++; }     //Validações
-        }*/
-
-        #endregion
-
         #region METODOS_DE_CLASSE
 
         public int InsereOcorrencia(DateTime data, int idCatastrofe, int idDistrito)
