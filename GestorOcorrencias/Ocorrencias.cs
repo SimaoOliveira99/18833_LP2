@@ -3,6 +3,8 @@ namespace GestorOcorrencias
 {
     public class Ocorrencias
     {
+        #region ESTADO
+
         static int totalOcorrencias;
         static Ocorrencia[] ocorrencias;
         const int MAX = 10;
@@ -12,6 +14,8 @@ namespace GestorOcorrencias
             totalOcorrencias = 0;
             ocorrencias = new Ocorrencia[MAX];
         }
+
+        #endregion
 
         #region METODOS
 
@@ -26,20 +30,20 @@ namespace GestorOcorrencias
 
         #endregion
 
+        #region METODOS_DE_CLASSE
 
-        public static int InsereOcorrencia(DateTime data, int idCatastrofe, int idDistrito)
+        public int InsereOcorrencia(DateTime data, int idCatastrofe, int idDistrito)
         {
             if (totalOcorrencias < MAX)
             {
+                ocorrencias[totalOcorrencias] = new Ocorrencia(totalOcorrencias, data, idCatastrofe, idDistrito);
                 totalOcorrencias++;
-                Ocorrencia newOcorr = new Ocorrencia(totalOcorrencias, data, idCatastrofe, idDistrito);
-                ocorrencias[totalOcorrencias] = newOcorr;
                 return totalOcorrencias;
             }
             return 0;
         }
 
-        public static int InsereOcorrencia(DateTime data, string descricao, int idCatastrofe, int idDistrito)
+        public int InsereOcorrencia(DateTime data, string descricao, int idCatastrofe, int idDistrito)
         {
 
             if (totalOcorrencias < MAX)
@@ -58,7 +62,7 @@ namespace GestorOcorrencias
         /// </summary>
         /// <returns>Se encontrar retorna a ocorrência senão retorna null.</returns>
         /// <param name="id">Identifier.</param>
-        public static Ocorrencia ProcuraOcorrencia(int id)
+        public Ocorrencia ProcuraOcorrencia(int id)
         {
             for (int i = 0; i < totalOcorrencias; i++)
             {
@@ -71,9 +75,7 @@ namespace GestorOcorrencias
             return null;
         }
 
-        //func adicionar dano
-        //func adicionar obito
-        //func adicionar ferido
+        #endregion
 
         #endregion
     }

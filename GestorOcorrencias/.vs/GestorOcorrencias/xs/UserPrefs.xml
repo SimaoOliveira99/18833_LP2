@@ -1,16 +1,19 @@
 ﻿<Properties StartupConfiguration="{7692CE29-2DCA-488B-B685-A55C9C9BA1B8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ocorrencia.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="8" Column="10" />
-      <File FileName="Ocorrencias.cs" Line="65" Column="1" />
-      <File FileName="Ocorrencia.cs" Line="94" Column="1" />
+      <File FileName="Program.cs" Line="25" Column="1" />
+      <File FileName="Pessoa.cs" Line="23" Column="31" />
+      <File FileName="Ocorrencias.cs" Line="69" Column="32" />
+      <File FileName="Ocorrencia.cs" Line="207" Column="45" />
+      <File FileName="Obito.cs" Line="14" Column="24" />
+      <File FileName="Ferido.cs" Line="27" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GestorOcorrencias" expanded="True">
             <Node name="GestorOcorrencias" expanded="True">
-              <Node name="Ocorrencia.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,8 +23,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/simaooliveira/ipca/lp2/gestorOcorrencias/GestorOcorrencias/Obito.cs" relfile="Obito.cs" line="36" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.GestorOcorrencias FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.GestorOcorrencias PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

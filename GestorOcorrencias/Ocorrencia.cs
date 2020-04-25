@@ -10,6 +10,11 @@ namespace GestorOcorrencias
         static string descricao;
         static int idCatastrofe;
         static int idDistrito;
+        const int MAX = 10;
+        Obito[] obitos;
+        static int totalObitos;
+        static Ferido[] feridos;
+        static int totalFeridos;
 
         #endregion
 
@@ -24,6 +29,10 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
+            obitos = new Obito[MAX];
+            totalObitos = 0;
+            feridos = new Ferido[MAX];
+            totalFeridos = 0;
         }
 
         public Ocorrencia(int idOc, DateTime dt, string desc, int idCat, int idDis)
@@ -34,6 +43,10 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
+            obitos = new Obito[MAX];
+            totalObitos = 0;
+            feridos = new Ferido[MAX];
+            totalFeridos = 0;
         }
 
         #endregion
@@ -76,6 +89,16 @@ namespace GestorOcorrencias
             set { idDistrito = value; }
         }
 
+        public int TotalObitos
+        {
+            get { return totalObitos; }
+        }
+
+        public int TotalFeridos
+        {
+            get { return totalFeridos; }
+        }
+
         #endregion
 
         #region METODOS_DE_CLASSE
@@ -85,9 +108,91 @@ namespace GestorOcorrencias
         /// </summary>
         /// <returns><c>true</c>, if identifier was equalsed, <c>false</c> otherwise.</returns>
         /// <param name="idToCompare">Identifier to compare.</param>
-        public bool EqualsId(int idToCompare)
+        public bool EqualsId (int idToCompare)
         {
             return id == idToCompare;
+        }
+
+        public int InsereObito (int ccParam, DateTime dataObi)
+        {
+            if (totalObitos < MAX)
+            {
+                    obitos[totalObitos] = new Obito(totalObitos++, ccParam, dataObi);
+                    totalObitos++;
+                    return totalObitos;
+            }
+            return 0;
+        }
+
+        public int InsereObito(string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, DateTime dataObi, string caus, string desc)
+        {
+            if (totalObitos < MAX)
+            {
+                    obitos[totalObitos] = new Obito(totalObitos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, dataObi, caus, desc);
+                    totalObitos++;
+                    return totalObitos;
+            }
+            return 0;
+        }
+
+        public Obito ProcuraObito(int cc)
+        {
+            for (int i = 0; i < totalObitos; i++)
+            {
+                if (obitos[0].EqualsCc(cc))
+                    return obitos[i];
+            }
+            return null;
+        }
+
+        public int InsereFerido (int ccParam)
+        {
+            if (totalFeridos < MAX)
+            {
+                    feridos[totalFeridos] = new Ferido(totalFeridos++, ccParam);
+                    totalFeridos++;
+                    return totalFeridos;
+            }
+            return 0;
+        }
+
+        public int InsereFerido(int ccParam, string desc)
+        {
+            if (totalFeridos < MAX)
+            {
+                    feridos[totalFeridos] = new Ferido(totalFeridos++, ccParam, desc);
+                    totalFeridos++;
+                    return totalFeridos;
+            }
+            return 0;
+        }
+
+        public int InsereFerido (string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, string desc)
+        {
+            if (totalFeridos < MAX)
+            {
+                    feridos[totalFeridos] = new Ferido(totalFeridos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, desc);
+                    totalFeridos++;
+                    return totalFeridos;
+            }
+            return 0;
+        }
+
+        public bool ExistePessoa (int cc)
+        {
+            if ( ProcuraObito(cc) != null || ProcuraFerido(cc) != null)
+                return true;
+            return false;
+        }
+
+        public Ferido ProcuraFerido (int cc)
+        {
+            for (int i = 0; i < totalFeridos; i++)
+            {
+                if (feridos[i].EqualsCc(cc))
+                    return feridos[i];
+            }
+            return null;
         }
 
         #endregion
