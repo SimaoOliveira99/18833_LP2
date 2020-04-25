@@ -8,6 +8,7 @@ namespace GestorOcorrencias
         {
             Ocorrencias ocorrencias = new Ocorrencias();
             Catastrofes catastrofes = new Catastrofes();
+            Distritos distritos = new Distritos();
 
             #region DUMMIE_DATA
 
