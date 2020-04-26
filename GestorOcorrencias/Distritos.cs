@@ -25,7 +25,7 @@ namespace GestorOcorrencias
 
         #region METODOS_DE_CLASSE
 
-        public int InsereCatastrofe(string nome)
+        public int InsereDistrito(string nome)
         {
             if (totalDistritos < MAX)
             {
@@ -36,7 +36,7 @@ namespace GestorOcorrencias
             return 0;
         }
 
-        public Distrito ProcuraCatastrofe(int id)
+        public Distrito ProcuraDistrito(int id)
         {
             for (int i = 0; i < totalDistritos; i++)
             {
