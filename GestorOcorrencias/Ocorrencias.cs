@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace GestorOcorrencias
 {
     public class Ocorrencias
@@ -6,13 +7,13 @@ namespace GestorOcorrencias
         #region ESTADO
 
         static int totalOcorrencias;
-        static Ocorrencia[] ocorrencias;
-        const int MAX = 10;
+        private static List<Ocorrencia> ocorrencias;
+        private static Ocorrencia auxOcorrencia;
 
         public Ocorrencias()
         {
             totalOcorrencias = 0;
-            ocorrencias = new Ocorrencia[MAX];
+            ocorrencias = new List<Ocorrencia>();
         }
 
         #endregion
@@ -23,27 +24,21 @@ namespace GestorOcorrencias
 
         public int InsereOcorrencia(DateTime data, int idCatastrofe, int idDistrito)
         {
-            if (totalOcorrencias < MAX)
-            {
-                ocorrencias[totalOcorrencias] = new Ocorrencia(totalOcorrencias, data, idCatastrofe, idDistrito);
-                totalOcorrencias++;
-                return totalOcorrencias;
-            }
-            return 0;
+            
+            auxOcorrencia = new Ocorrencia(totalOcorrencias, data, idCatastrofe, idDistrito);
+            ocorrencias.Add(auxOcorrencia);
+            totalOcorrencias++;
+            return totalOcorrencias;
         }
 
         public int InsereOcorrencia(DateTime data, string descricao, int idCatastrofe, int idDistrito)
         {
 
-            if (totalOcorrencias < MAX)
-            {
-                //Ocorrencia newOcorr = new Ocorrencia(totalOcorrencias++, data, descricao, idCatastrofe, idDistrito);
-                ocorrencias[totalOcorrencias] = new Ocorrencia(totalOcorrencias + 1, data, descricao, idCatastrofe, idDistrito);
-                totalOcorrencias++;
-                return totalOcorrencias;
-            }
+            auxOcorrencia = new Ocorrencia(totalOcorrencias + 1, data, descricao, idCatastrofe, idDistrito);
+            ocorrencias.Add(auxOcorrencia);
+            totalOcorrencias++;
+            return totalOcorrencias;
 
-            return 0;
         }
 
         /// <summary>
