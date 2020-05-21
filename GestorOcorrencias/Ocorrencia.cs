@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace GestorOcorrencias
 {
     public class Ocorrencia
@@ -11,9 +13,11 @@ namespace GestorOcorrencias
         static int idCatastrofe;
         static int idDistrito;
         const int MAX = 10;
-        Obito[] obitos;
+        private static List<Obito> obitos;
+        private static Obito auxObito;
         static int totalObitos;
-        static Ferido[] feridos;
+        private static List<Ferido> feridos;
+        private static Ferido auxFerido;
         static int totalFeridos;
 
         #endregion
@@ -29,9 +33,9 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
-            obitos = new Obito[MAX];
+            obitos = new List<Obito>();
             totalObitos = 0;
-            feridos = new Ferido[MAX];
+            feridos = new List<Ferido>();
             totalFeridos = 0;
         }
 
@@ -43,9 +47,9 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
-            obitos = new Obito[MAX];
+            obitos = new List<Obito>();
             totalObitos = 0;
-            feridos = new Ferido[MAX];
+            feridos = new List<Ferido>();
             totalFeridos = 0;
         }
 
@@ -115,24 +119,18 @@ namespace GestorOcorrencias
 
         public int InsereObito (int ccParam, DateTime dataObi)
         {
-            if (totalObitos < MAX)
-            {
-                    obitos[totalObitos] = new Obito(totalObitos++, ccParam, dataObi);
-                    totalObitos++;
-                    return totalObitos;
-            }
-            return 0;
+            auxObito = new Obito(totalObitos++, ccParam, dataObi);
+            obitos.Add(auxObito);
+            totalObitos++;
+            return totalObitos;
         }
 
         public int InsereObito(string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, DateTime dataObi, string caus, string desc)
         {
-            if (totalObitos < MAX)
-            {
-                    obitos[totalObitos] = new Obito(totalObitos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, dataObi, caus, desc);
-                    totalObitos++;
-                    return totalObitos;
-            }
-            return 0;
+            auxObito = new Obito(totalObitos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, dataObi, caus, desc);
+            obitos.Add(auxObito);
+            totalObitos++;
+            return totalObitos;
         }
 
         public Obito ProcuraObito(int cc)
@@ -147,35 +145,26 @@ namespace GestorOcorrencias
 
         public int InsereFerido (int ccParam)
         {
-            if (totalFeridos < MAX)
-            {
-                    feridos[totalFeridos] = new Ferido(totalFeridos++, ccParam);
-                    totalFeridos++;
-                    return totalFeridos;
-            }
-            return 0;
+            auxFerido = new Ferido(totalFeridos++, ccParam);
+            feridos.Add(auxFerido);
+            totalFeridos++;
+            return totalFeridos;
         }
 
         public int InsereFerido(int ccParam, string desc)
         {
-            if (totalFeridos < MAX)
-            {
-                    feridos[totalFeridos] = new Ferido(totalFeridos++, ccParam, desc);
-                    totalFeridos++;
-                    return totalFeridos;
-            }
-            return 0;
+            auxFerido = new Ferido(totalFeridos++, ccParam, desc);
+            feridos.Add(auxFerido);
+            totalFeridos++;
+            return totalFeridos;
         }
 
         public int InsereFerido (string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, string desc)
         {
-            if (totalFeridos < MAX)
-            {
-                    feridos[totalFeridos] = new Ferido(totalFeridos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, desc);
-                    totalFeridos++;
-                    return totalFeridos;
-            }
-            return 0;
+            auxFerido = new Ferido(totalFeridos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, desc);
+            feridos.Add(auxFerido);
+            totalFeridos++;
+            return totalFeridos;
         }
 
         public bool ExistePessoa (int cc)

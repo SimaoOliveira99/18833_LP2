@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace GestorOcorrencias
 {
     public class Distritos
@@ -6,8 +8,8 @@ namespace GestorOcorrencias
         #region ESTADOS
 
         static int totalDistritos;
-        const int MAX = 10;
-        static Distrito[] distritos;
+        private static List<Distrito> distritos;
+        private static Distrito auxDistritos;
 
         #endregion
 
@@ -18,7 +20,7 @@ namespace GestorOcorrencias
         public Distritos()
         {
             totalDistritos = 0;
-            distritos = new Distrito[MAX];
+            distritos = new List<Distrito>();
         }
 
         #endregion
@@ -27,13 +29,10 @@ namespace GestorOcorrencias
 
         public int InsereDistrito(string nome)
         {
-            if (totalDistritos < MAX)
-            {
-                distritos[totalDistritos] = new Distrito(totalDistritos++, nome);
-                totalDistritos++;
-                return totalDistritos;
-            }
-            return 0;
+            auxDistritos = new Distrito(totalDistritos++, nome);
+            distritos.Add(auxDistritos);
+            totalDistritos++;
+            return totalDistritos;
         }
 
         public Distrito ProcuraDistrito(int id)

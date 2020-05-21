@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace GestorOcorrencias
 {
     public class Catastrofes
@@ -7,8 +9,8 @@ namespace GestorOcorrencias
         #region ESTADOS
 
         static int totalCatastrofes;
-        const int MAX = 10;
-        static Catastrofe[] catastrofes;
+        private static List<Catastrofe> catastrofes;
+        static Catastrofe auxCatastrofes;
 
         #endregion
 
@@ -19,7 +21,7 @@ namespace GestorOcorrencias
         public Catastrofes()
         {
             totalCatastrofes = 0;
-            catastrofes = new Catastrofe[MAX];
+            catastrofes = new List<Catastrofe>();
         }
 
         #endregion
@@ -28,24 +30,16 @@ namespace GestorOcorrencias
 
         public int InsereCatastrofe (string nome)
         {
-            if (totalCatastrofes < MAX)
-            {
-                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome);
-                totalCatastrofes++;
-                return totalCatastrofes;
-            }
-            return 0;
+            catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome);
+            totalCatastrofes++;
+            return totalCatastrofes;
         }
 
         public int InsereCatastrofe (string nome, string desc)
         {
-            if (totalCatastrofes < MAX)
-            {
-                catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome, desc);
-                totalCatastrofes++;
-                return totalCatastrofes;
-            }
-            return 0;
+            catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome, desc);
+            totalCatastrofes++;
+            return totalCatastrofes;
         }
 
         public Catastrofe ProcuraCatastrofe(int id)
