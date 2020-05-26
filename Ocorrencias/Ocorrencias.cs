@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ocorrencias;
+using System;
 using System.Collections.Generic;
 namespace GestorOcorrencias
 {
@@ -24,7 +25,6 @@ namespace GestorOcorrencias
 
         public int InsereOcorrencia(DateTime data, int idCatastrofe, int idDistrito)
         {
-            
             auxOcorrencia = new Ocorrencia(totalOcorrencias, data, idCatastrofe, idDistrito);
             ocorrencias.Add(auxOcorrencia);
             totalOcorrencias++;

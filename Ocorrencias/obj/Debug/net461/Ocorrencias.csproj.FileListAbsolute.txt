@@ -1,0 +1,13 @@
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Ocorrencias.exe.config
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Ocorrencias.exe
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Ocorrencias.pdb
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Pessoas.exe
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Pessoas.pdb
+C:\IPCA\LP2\18833_LP2\Ocorrencias\bin\Debug\net461\Pessoas.exe.config
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.csprojAssemblyReference.cache
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.csproj.CoreCompileInputs.cache
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.AssemblyInfoInputs.cache
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.AssemblyInfo.cs
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.csproj.CopyComplete
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.exe
+C:\IPCA\LP2\18833_LP2\Ocorrencias\obj\Debug\net461\Ocorrencias.pdb

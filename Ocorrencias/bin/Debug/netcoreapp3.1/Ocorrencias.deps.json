@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Ocorrencias/1.0.0": {
+        "dependencies": {
+          "Pessoas": "1.0.0"
+        },
+        "runtime": {
+          "Ocorrencias.dll": {}
+        }
+      },
+      "Pessoas/1.0.0": {
+        "runtime": {
+          "Pessoas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ocorrencias/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pessoas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

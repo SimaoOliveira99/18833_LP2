@@ -1,0 +1,8 @@
+C:\IPCA\LP2\18833_LP2\Pessoas\bin\Debug\net461\Pessoas.exe.config
+C:\IPCA\LP2\18833_LP2\Pessoas\bin\Debug\net461\Pessoas.exe
+C:\IPCA\LP2\18833_LP2\Pessoas\bin\Debug\net461\Pessoas.pdb
+C:\IPCA\LP2\18833_LP2\Pessoas\obj\Debug\net461\Pessoas.csproj.CoreCompileInputs.cache
+C:\IPCA\LP2\18833_LP2\Pessoas\obj\Debug\net461\Pessoas.AssemblyInfoInputs.cache
+C:\IPCA\LP2\18833_LP2\Pessoas\obj\Debug\net461\Pessoas.AssemblyInfo.cs
+C:\IPCA\LP2\18833_LP2\Pessoas\obj\Debug\net461\Pessoas.exe
+C:\IPCA\LP2\18833_LP2\Pessoas\obj\Debug\net461\Pessoas.pdb

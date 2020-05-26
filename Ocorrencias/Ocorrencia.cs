@@ -119,10 +119,18 @@ namespace GestorOcorrencias
 
         public int InsereObito (int ccParam, DateTime dataObi)
         {
-            auxObito = new Obito(totalObitos++, ccParam, dataObi);
-            obitos.Add(auxObito);
-            totalObitos++;
-            return totalObitos;
+            if (! ExistePessoa(ccParam))
+            {
+                auxObito = new Obito(totalObitos++, ccParam, dataObi);
+                obitos.Add(auxObito);
+                totalObitos++;
+                return totalObitos;
+            }
+            else
+            {
+                Console.WriteLine("Já existe");
+                return 0;
+            }
         }
 
         public int InsereObito(string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, DateTime dataObi, string caus, string desc)
@@ -169,8 +177,15 @@ namespace GestorOcorrencias
 
         public bool ExistePessoa (int cc)
         {
-            if ( ProcuraObito(cc) != null || ProcuraFerido(cc) != null)
+            if (ProcuraObito(cc) != null || ProcuraFerido(cc) != null)
+            {
+                if (ProcuraObito(cc) != null)
+                    Console.WriteLine("existe obito");
+                if (ProcuraFerido(cc) != null)
+                    Console.WriteLine("existe ferido");
                 return true;
+            }
+            Console.WriteLine("Não existe pessoa");
             return false;
         }
 
