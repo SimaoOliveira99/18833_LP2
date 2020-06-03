@@ -1,7 +1,8 @@
 ﻿using System;
 namespace GestorOcorrencias
 {
-    public class Distrito
+    [Serializable]
+    public class DistritoA
     {
 
         #region ESTADO
@@ -15,10 +16,25 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
-        public Distrito(int idParam, string nomeParam)
+        public DistritoA(int idParam, string nomeParam)
         {
             id = idParam;
             nome = nomeParam;
+        }
+
+        #endregion
+
+        #region PROPRIEDADES
+
+        public int Id
+        {
+            get { return id; }
+        }
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
         }
 
         #endregion

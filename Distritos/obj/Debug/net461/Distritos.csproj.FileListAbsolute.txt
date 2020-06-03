@@ -6,3 +6,4 @@ C:\IPCA\LP2\18833_LP2\Distritos\obj\Debug\net461\Distritos.AssemblyInfoInputs.ca
 C:\IPCA\LP2\18833_LP2\Distritos\obj\Debug\net461\Distritos.AssemblyInfo.cs
 C:\IPCA\LP2\18833_LP2\Distritos\obj\Debug\net461\Distritos.exe
 C:\IPCA\LP2\18833_LP2\Distritos\obj\Debug\net461\Distritos.pdb
+C:\IPCA\LP2\18833_LP2\Distritos\obj\Debug\net461\Distritos.csprojAssemblyReference.cache

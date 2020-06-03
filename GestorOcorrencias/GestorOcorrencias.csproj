@@ -7,7 +7,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GestorOcorrencias</RootNamespace>
     <AssemblyName>GestorOcorrencias</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -40,21 +40,17 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Catastrofes\Catastrofes.csproj">
-      <Project>{50df1fbb-5f97-4952-86af-85d1d4fe17aa}</Project>
-      <Name>Catastrofes</Name>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{ea54a7f8-0b3e-49ce-a44a-d26dd1ea82c2}</Project>
+      <Name>BO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Distritos\Distritos.csproj">
-      <Project>{3b9fdc38-671d-4bff-9c47-aa7455e1b94d}</Project>
-      <Name>Distritos</Name>
+    <ProjectReference Include="..\BR\BR.csproj">
+      <Project>{d65e0e8f-40e5-4efe-897f-aa8174e70c55}</Project>
+      <Name>BR</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ocorrencias\Ocorrencias.csproj">
-      <Project>{7ad9c467-d889-463d-852f-a7e82c3dc826}</Project>
-      <Name>Ocorrencias</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Pessoas\Pessoas.csproj">
-      <Project>{ad4723d8-aa96-41a7-bf4c-c2ed3bfef477}</Project>
-      <Name>Pessoas</Name>
+    <ProjectReference Include="..\Dados\Dados.csproj">
+      <Project>{0d1d75f9-2721-4a55-9122-b4c057b2d33b}</Project>
+      <Name>Dados</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

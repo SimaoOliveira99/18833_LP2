@@ -1,6 +1,8 @@
 ﻿using System;
-namespace GestorOcorrencias
+using System.Runtime.Serialization.Formatters.Binary;
+namespace BO
 {
+    [Serializable]
     public class Obito : Pessoa
     {
         #region ESTADO
@@ -13,7 +15,34 @@ namespace GestorOcorrencias
 
         #region METODOS
 
+        #region PROPRIEDADES
+
+        public DateTime DataObito
+        {
+            get { return dataObito; }
+            set { dataObito = value; }
+        }
+
+        public string Causa
+        {
+            get { return causa; }
+            set { causa = value; }
+        }
+
+        public string DescricaoFerimentos
+        {
+            get { return descricaoFerimentos; }
+            set { descricaoFerimentos = value; }
+        }
+
+        #endregion
+
         #region CONSTRUTORES
+
+        public Obito(int ccParam, DateTime dataObi) : base (ccParam)
+        {
+            dataObito = dataObi;
+        }
 
         public Obito(int idParam, int ccParam, DateTime dataObi) : base (idParam, ccParam)
         {

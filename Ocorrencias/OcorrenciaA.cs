@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace GestorOcorrencias
 {
-    public class Ocorrencia
+    [Serializable]
+
+    public class Ocorrencia2
     {
         #region ESTADO
 
@@ -13,11 +15,11 @@ namespace GestorOcorrencias
         static int idCatastrofe;
         static int idDistrito;
         const int MAX = 10;
-        private static List<Obito> obitos;
-        private static Obito auxObito;
+        private static List<ObitoA> obitos;
+        private static ObitoA auxObito;
         static int totalObitos;
-        private static List<Ferido> feridos;
-        private static Ferido auxFerido;
+        private static List<FeridoA> feridos;
+        private static FeridoA auxFerido;
         static int totalFeridos;
 
         #endregion
@@ -33,9 +35,9 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
-            obitos = new List<Obito>();
+            obitos = new List<ObitoA>();
             totalObitos = 0;
-            feridos = new List<Ferido>();
+            feridos = new List<FeridoA>();
             totalFeridos = 0;
         }
 
@@ -47,9 +49,9 @@ namespace GestorOcorrencias
             //verificar se existe o idCat e idDis na lista de catastrofes e de distritos respetivamente
             idCatastrofe = idCat;
             idDistrito = idDis;
-            obitos = new List<Obito>();
+            obitos = new List<ObitoA>();
             totalObitos = 0;
-            feridos = new List<Ferido>();
+            feridos = new List<FeridoA>();
             totalFeridos = 0;
         }
 
@@ -121,7 +123,7 @@ namespace GestorOcorrencias
         {
             if (! ExistePessoa(ccParam))
             {
-                auxObito = new Obito(totalObitos++, ccParam, dataObi);
+                auxObito = new ObitoA(totalObitos++, ccParam, dataObi);
                 obitos.Add(auxObito);
                 totalObitos++;
                 return totalObitos;
@@ -135,13 +137,13 @@ namespace GestorOcorrencias
 
         public int InsereObito(string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, DateTime dataObi, string caus, string desc)
         {
-            auxObito = new Obito(totalObitos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, dataObi, caus, desc);
+            auxObito = new ObitoA(totalObitos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, dataObi, caus, desc);
             obitos.Add(auxObito);
             totalObitos++;
             return totalObitos;
         }
 
-        public Obito ProcuraObito(int cc)
+        public ObitoA ProcuraObito(int cc)
         {
             for (int i = 0; i < totalObitos; i++)
             {
@@ -153,7 +155,7 @@ namespace GestorOcorrencias
 
         public int InsereFerido (int ccParam)
         {
-            auxFerido = new Ferido(totalFeridos++, ccParam);
+            auxFerido = new FeridoA(totalFeridos++, ccParam);
             feridos.Add(auxFerido);
             totalFeridos++;
             return totalFeridos;
@@ -161,7 +163,7 @@ namespace GestorOcorrencias
 
         public int InsereFerido(int ccParam, string desc)
         {
-            auxFerido = new Ferido(totalFeridos++, ccParam, desc);
+            auxFerido = new FeridoA(totalFeridos++, ccParam, desc);
             feridos.Add(auxFerido);
             totalFeridos++;
             return totalFeridos;
@@ -169,7 +171,7 @@ namespace GestorOcorrencias
 
         public int InsereFerido (string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam, string desc)
         {
-            auxFerido = new Ferido(totalFeridos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, desc);
+            auxFerido = new FeridoA(totalFeridos++, nomeParam, idadeParam, ccParam, dataNascParam, idDistritoParam, desc);
             feridos.Add(auxFerido);
             totalFeridos++;
             return totalFeridos;
@@ -189,7 +191,7 @@ namespace GestorOcorrencias
             return false;
         }
 
-        public Ferido ProcuraFerido (int cc)
+        public FeridoA ProcuraFerido (int cc)
         {
             for (int i = 0; i < totalFeridos; i++)
             {

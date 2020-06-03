@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace GestorOcorrencias
 {
-    public class Catastrofes
+    public class CatastrofesA
     {
 
         #region ESTADOS
 
         static int totalCatastrofes;
-        private static List<Catastrofe> catastrofes;
-        static Catastrofe auxCatastrofes;
+        private static List<CatastrofeA> catastrofes;
+        static CatastrofeA auxCatastrofes;
 
         #endregion
 
@@ -18,10 +18,10 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
-        public Catastrofes()
+        public CatastrofesA()
         {
             totalCatastrofes = 0;
-            catastrofes = new List<Catastrofe>();
+            catastrofes = new List<CatastrofeA>();
         }
 
         #endregion
@@ -30,19 +30,19 @@ namespace GestorOcorrencias
 
         public int InsereCatastrofe (string nome)
         {
-            catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome);
+            catastrofes[totalCatastrofes] = new CatastrofeA(totalCatastrofes++, nome);
             totalCatastrofes++;
             return totalCatastrofes;
         }
 
         public int InsereCatastrofe (string nome, string desc)
         {
-            catastrofes[totalCatastrofes] = new Catastrofe(totalCatastrofes++, nome, desc);
+            catastrofes[totalCatastrofes] = new CatastrofeA(totalCatastrofes++, nome, desc);
             totalCatastrofes++;
             return totalCatastrofes;
         }
 
-        public Catastrofe ProcuraCatastrofe(int id)
+        public CatastrofeA ProcuraCatastrofe(int id)
         {
             for (int i = 0; i < totalCatastrofes; i++)
             {

@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Runtime.Serialization.Formatters.Binary;
 namespace GestorOcorrencias
 {
-    public class Pessoa
+    [Serializable]
+    public class PessoaA
     {
         #region ESTADOS
 
@@ -27,12 +29,12 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
-        public Pessoa(int idParam, int ccParam)
+        public PessoaA(int idParam, int ccParam)
         {
             id = idParam;
             cc = ccParam;
         }
-        public Pessoa(int idParam, string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam)
+        public PessoaA(int idParam, string nomeParam, int idadeParam, int ccParam, DateTime dataNascParam, int idDistritoParam)
         {
             id = idParam;
             nome = nomeParam;

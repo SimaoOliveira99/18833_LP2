@@ -1,7 +1,7 @@
 ﻿using System;
 namespace GestorOcorrencias
 {
-    public class Catastrofe
+    public class CatastrofeA
     {
         #region ESTADO
 
@@ -15,13 +15,13 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
-        public Catastrofe(int idParam, string nomeParam)
+        public CatastrofeA(int idParam, string nomeParam)
         {
             id = idParam;
             nome = nomeParam;
         }
 
-        public Catastrofe(int idParam, string nomeParam, string desc)
+        public CatastrofeA(int idParam, string nomeParam, string desc)
         {
             id = idParam;
             nome = nomeParam;
