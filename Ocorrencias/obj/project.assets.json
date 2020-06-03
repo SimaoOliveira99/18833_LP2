@@ -1,42 +1,12 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.6.1": {
-      "Pessoas/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "compile": {
-          "bin/placeholder/Pessoas.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pessoas.dll": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
-      "Pessoas/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "compile": {
-          "bin/placeholder/Pessoas.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pessoas.dll": {}
-        }
-      }
-    }
+    ".NETFramework,Version=v4.6.1": {},
+    ".NETFramework,Version=v4.6.1/win7-x86": {}
   },
-  "libraries": {
-    "Pessoas/1.0.0": {
-      "type": "project",
-      "path": "../Pessoas/Pessoas.csproj",
-      "msbuildProject": "../Pessoas/Pessoas.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.6.1": [
-      "Pessoas >= 1.0.0"
-    ]
+    ".NETFramework,Version=v4.6.1": []
   },
   "packageFolders": {
     "C:\\Users\\Simão\\.nuget\\packages\\": {}
@@ -63,11 +33,7 @@
       },
       "frameworks": {
         "net461": {
-          "projectReferences": {
-            "C:\\IPCA\\LP2\\18833_LP2\\Pessoas\\Pessoas.csproj": {
-              "projectPath": "C:\\IPCA\\LP2\\18833_LP2\\Pessoas\\Pessoas.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

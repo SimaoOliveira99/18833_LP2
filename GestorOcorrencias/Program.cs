@@ -8,19 +8,6 @@ namespace GestorOcorrencias
     {
         public static void Main(string[] args)
         {
-            //nao criar aqui nada
-            //ex: 1º criar um objeto Distrito 
-            //2º chama ficheiro BR que recebe o objeto e chama função do distritos que recebe objeto Distrito pra inserir distrito 
-            //OcorrenciasA ocorrencias = new OcorrenciasA();
-            //CatastrofesA catastrofes = new CatastrofesA();
-            //DistritosA distritos = new DistritosA();
-
-            //NEW
-            Distrito distrito;
-            Catastrofe catastrofe;
-            Obito obito;
-            DateTime data;
-            //ENDNEW
 
             #region LOAD_DATA
 
@@ -32,12 +19,19 @@ namespace GestorOcorrencias
                 //DistritosA.Load("ocorrenciasFile");
                 Console.WriteLine("teste");
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Erro ao carregar ficheiro: " + e);
             }
 
             #endregion
+
+            //NEW
+            Distrito distrito;
+            Catastrofe catastrofe;
+            Obito obito;
+            DateTime data;
+            //ENDNEW
 
             #region DUMMIE_DATA
 
@@ -67,7 +61,7 @@ namespace GestorOcorrencias
             try {
                 data = new DateTime(2018, 12, 02, 8, 0, 0);
                 obito = new Obito(2412312, data);
-                OcorrenciaBR.ProcuraOcorrencia(1).InsereObito(obito);
+                //OcorrenciaBR.ProcuraOcorrencia(1).InsereObito(obito);
             }
             catch (Exception e)
             {

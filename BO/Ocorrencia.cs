@@ -74,14 +74,12 @@ namespace BO
         public int IdCatastrofe
         {
             get { return idCatastrofe; }
-            //verificar se existe o id vindo do value na lista de catastrofes
             set { idCatastrofe = value; }
         }
 
         public int IdDistrito
         {
             get { return idDistrito; }
-            //verificar se existe o id vindo do value na lista de distritos
             set { idDistrito = value; }
         }
 

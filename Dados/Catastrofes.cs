@@ -12,7 +12,6 @@ namespace GestorOcorrencias
 
         static int totalCatastrofes;
         private static List<Catastrofe> catastrofes;
-        static Catastrofe auxCatastrofes;
 
         #endregion
 

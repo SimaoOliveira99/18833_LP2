@@ -12,7 +12,6 @@ namespace GestorOcorrencias
 
         static int totalDistritos;
         static List<Distrito> distritos;
-        private static Distrito auxDistritos;
 
         #endregion
 

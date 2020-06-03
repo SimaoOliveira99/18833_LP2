@@ -21,10 +21,8 @@ namespace Dados
         int idCatastrofe;
         int idDistrito;
         private List<Obito> obitos;
-        private Obito auxObito;
         int totalObitos;
         private List<Ferido> feridos;
-        private Ferido auxFerido;
         int totalFeridos;
 
         #endregion
@@ -76,14 +74,12 @@ namespace Dados
         public int IdCatastrofe
         {
             get { return idCatastrofe; }
-            //verificar se existe o id vindo do value na lista de catastrofes
             set { idCatastrofe = value; }
         }
 
         public int IdDistrito
         {
             get { return idDistrito; }
-            //verificar se existe o id vindo do value na lista de distritos
             set { idDistrito = value; }
         }
 
