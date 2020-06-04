@@ -1,0 +1,9 @@
+C:\IPCA\LP2\18833_LP2\Dados\bin\Debug\Dados.dll
+C:\IPCA\LP2\18833_LP2\Dados\bin\Debug\Dados.pdb
+C:\IPCA\LP2\18833_LP2\Dados\bin\Debug\BO.dll
+C:\IPCA\LP2\18833_LP2\Dados\bin\Debug\BO.pdb
+C:\IPCA\LP2\18833_LP2\Dados\obj\Debug\Dados.csprojAssemblyReference.cache
+C:\IPCA\LP2\18833_LP2\Dados\obj\Debug\Dados.csproj.CoreCompileInputs.cache
+C:\IPCA\LP2\18833_LP2\Dados\obj\Debug\Dados.csproj.CopyComplete
+C:\IPCA\LP2\18833_LP2\Dados\obj\Debug\Dados.dll
+C:\IPCA\LP2\18833_LP2\Dados\obj\Debug\Dados.pdb

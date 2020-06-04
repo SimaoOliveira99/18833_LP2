@@ -1,0 +1,6 @@
+C:\IPCA\LP2\18833_LP2\BO\bin\Debug\BO.dll
+C:\IPCA\LP2\18833_LP2\BO\bin\Debug\BO.pdb
+C:\IPCA\LP2\18833_LP2\BO\obj\Debug\BO.csprojAssemblyReference.cache
+C:\IPCA\LP2\18833_LP2\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
+C:\IPCA\LP2\18833_LP2\BO\obj\Debug\BO.dll
+C:\IPCA\LP2\18833_LP2\BO\obj\Debug\BO.pdb

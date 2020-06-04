@@ -7,7 +7,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GestorOcorrencias</RootNamespace>
     <AssemblyName>GestorOcorrencias</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -35,18 +35,23 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ocorrencias.cs" />
-    <Compile Include="Ocorrencia.cs" />
-    <Compile Include="Pessoa.cs" />
-    <Compile Include="Obito.cs" />
-    <Compile Include="Ferido.cs" />
-    <Compile Include="Catastrofe.cs" />
-    <Compile Include="Catastrofes.cs" />
-    <Compile Include="Distrito.cs" />
-    <Compile Include="Distritos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{ea54a7f8-0b3e-49ce-a44a-d26dd1ea82c2}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BR\BR.csproj">
+      <Project>{d65e0e8f-40e5-4efe-897f-aa8174e70c55}</Project>
+      <Name>BR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dados\Dados.csproj">
+      <Project>{0d1d75f9-2721-4a55-9122-b4c057b2d33b}</Project>
+      <Name>Dados</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
