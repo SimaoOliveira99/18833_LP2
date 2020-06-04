@@ -1,9 +1,0 @@
-C:\IPCA\LP2\18833_LP2\Catastrofes\bin\Debug\net461\Catastrofes.pdb
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.csprojAssemblyReference.cache
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.csproj.CoreCompileInputs.cache
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.AssemblyInfoInputs.cache
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.AssemblyInfo.cs
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.pdb
-C:\IPCA\LP2\18833_LP2\Catastrofes\bin\Debug\net461\Catastrofes.exe.config
-C:\IPCA\LP2\18833_LP2\Catastrofes\bin\Debug\net461\Catastrofes.exe
-C:\IPCA\LP2\18833_LP2\Catastrofes\obj\Debug\net461\Catastrofes.exe
