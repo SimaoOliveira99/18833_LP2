@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using BO;
 
-namespace GestorOcorrencias
+namespace Dados
 {
+    [Serializable]
     public class Catastrofes
     {
 
@@ -19,10 +21,13 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
+        static Catastrofes()
+        {
+            catastrofes = new List<Catastrofe>();
+        }
         public Catastrofes()
         {
             totalCatastrofes = 0;
-            catastrofes = new List<Catastrofe>();
         }
 
         #endregion
@@ -124,12 +129,12 @@ namespace GestorOcorrencias
                 s.Flush();
                 s.Close();
                 s.Dispose();
+                return true;
             }
             catch (Exception e)
             {
                 throw e;
             }
-            return true;
         }
 
         /// <summary>
@@ -150,9 +155,9 @@ namespace GestorOcorrencias
                 s.Dispose();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
-                throw new Exception("Erro");
+                throw e;
             }
         }
 

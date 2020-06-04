@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using BO;
 
-namespace GestorOcorrencias
+namespace Dados
 {
     [Serializable]
     public class Distritos
@@ -19,10 +20,13 @@ namespace GestorOcorrencias
 
         #region CONSTRUTORES
 
+        static Distritos()
+        {
+            distritos = new List<Distrito>();
+        }
         public Distritos()
         {
             totalDistritos = 0;
-            distritos = new List<Distrito>();
         }
 
         #endregion
@@ -131,12 +135,12 @@ namespace GestorOcorrencias
                 s.Flush();
                 s.Close();
                 s.Dispose();
+                return true;
             }
             catch (Exception e)
             {
                 throw e;
             }
-            return true;
         }
 
         /// <summary>
@@ -157,9 +161,9 @@ namespace GestorOcorrencias
                 s.Dispose();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
-                throw new Exception("Erro");
+                throw e;
             }
         }
 

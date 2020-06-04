@@ -1,5 +1,5 @@
 ﻿using System;
-namespace GestorOcorrencias
+namespace BO
 {
     [Serializable]
     public class Distrito

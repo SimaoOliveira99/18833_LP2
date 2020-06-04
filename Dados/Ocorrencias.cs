@@ -6,7 +6,6 @@ using System.Text;
 using System.Runtime.Serialization.Formatters.Binary;   //serialização
 using System.Xml.Serialization;
 using BO;
-using GestorOcorrencias;
 
 namespace Dados
 {
@@ -230,13 +229,8 @@ namespace Dados
         {
             if (ProcuraObito(cc) != null || ProcuraFerido(cc) != null)
             {
-                if (ProcuraObito(cc) != null)
-                    Console.WriteLine("existe obito");
-                if (ProcuraFerido(cc) != null)
-                    Console.WriteLine("existe ferido");
                 return true;
             }
-            Console.WriteLine("Não existe pessoa");
             return false;
         }
 
@@ -282,6 +276,8 @@ namespace Dados
                     o.IdCatastrofe = 0;
                 totalOcorrencias++;
                 auxOcorrencia = new OcorrenciaDB(totalOcorrencias, o.Data, o.Descricao, o.IdCatastrofe, o.IdDistrito);
+                if (ocorrencias == null)
+                    ocorrencias = new List<OcorrenciaDB>();
                 ocorrencias.Add(auxOcorrencia);
                 return totalOcorrencias;
             }
@@ -348,12 +344,12 @@ namespace Dados
                 s.Flush();
                 s.Close();
                 s.Dispose();
+                return true;
             }
             catch (Exception e)
             {
                 throw e;
             }
-            return true;
         }
 
         /// <summary>
@@ -374,9 +370,9 @@ namespace Dados
                 s.Dispose();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
-                throw new Exception("Erro");
+                throw e;
             }
         }
 

@@ -1,9 +1,11 @@
-﻿using GestorOcorrencias;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using Dados;
+using BO;
 
 namespace BR
 {
@@ -13,11 +15,11 @@ namespace BR
 
         #region METODOS_DE_CLASSE
 
-        public int InsereCatastrofe (Catastrofe c)
+        public static int InsereCatastrofe (Catastrofe c)
         {
             try
             {
-                if (ExisteCatastrofe(c.Nome))
+                if (!ExisteCatastrofe(c.Nome))
                     return Catastrofes.InsereCatastrofe(c);
                 else
                     return 0;
@@ -80,7 +82,10 @@ namespace BR
         {
             try
             {
-                return Catastrofes.Load(nomeFicheiro);
+                if (File.Exists(nomeFicheiro))
+                    return Catastrofes.Load(nomeFicheiro);
+                else
+                    return false;
             }
             catch (Exception e)
             {

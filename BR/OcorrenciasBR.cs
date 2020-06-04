@@ -4,122 +4,20 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using Dados;
 using BO;
 
 namespace BR
 {
-    public class OcorrenciaBR
+    public class OcorrenciasBR
     {
-        #region ESTADO 
-
-        //public OcorrenciaDB ocorrencia;
-
-        #endregion
 
         #region METODOS
 
-        //#region PROPRIEDADES
-
-        //public int this[int i]
-        //{
-        //    public int Id
-        //    {
-        //        return 0;
-        //    }
-        //    //get { return ocorrencia.Id; }
-        //    //set
-        //    //{
-        //    //    try
-        //    //    {
-        //    //        ocorrencia.Id = value;
-        //    //    }
-        //    //    catch (Exception e)
-        //    //    {
-        //    //        throw e;
-        //    //    }
-        //    //}
-        //}
-
-        //public DateTime Data
-        //{
-        //    get { return ocorrencia.Data; }
-        //    set
-        //    {
-        //        try
-        //        {
-        //            ocorrencia.Data = value;
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            throw e;
-        //        }
-        //    }
-        //}
-
-        //public string Descricao
-        //{
-        //    get { return ocorrencia.Descricao; }
-        //    set
-        //    {
-        //        try
-        //        {
-        //            ocorrencia.Descricao = value;
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            throw e;
-        //        }
-        //    }
-        //}
-
-        //public int IdCatastrofe
-        //{
-        //    get { return ocorrencia.IdCatastrofe; }
-        //    set
-        //    {
-        //        try
-        //        {
-        //            ocorrencia.IdCatastrofe = value;
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            throw e;
-        //        }
-        //    }
-        //}
-
-        //public int IdDistrito
-        //{
-        //    get { return ocorrencia.IdDistrito; }
-        //    set
-        //    {
-        //        try
-        //        {
-        //            ocorrencia.IdDistrito = value;
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            throw e;
-        //        }
-        //    }
-        //}
-
-        //public int TotalObitos
-        //{
-        //    get { return ocorrencia.TotalObitos; }
-        //}
-
-        //public int TotalFeridos
-        //{
-        //    get { return ocorrencia.TotalFeridos; }
-        //}
-
-        //#endregion
-
         #region METODOS_DE_CLASSE
 
-        public int InsereObito(int ocoId, Obito o)
+        public static int InsereObito(int ocoId, Obito o)
         {
             try
             {
@@ -131,7 +29,7 @@ namespace BR
             }
         }
 
-        public bool ApagaObito(int ocoId, Obito o)
+        public static bool ApagaObito(int ocoId, Obito o)
         {
             try
             {
@@ -143,7 +41,7 @@ namespace BR
             }
         }
 
-        public int InsereFerido(int ocoId, Ferido f)
+        public static int InsereFerido(int ocoId, Ferido f)
         {
             try
             {
@@ -218,7 +116,10 @@ namespace BR
         {
             try
             {
-                return Ocorrencias.Load(nomeFicheiro);
+                if (File.Exists(nomeFicheiro))
+                    return Ocorrencias.Load(nomeFicheiro);
+                else
+                    return false;
             }
             catch (Exception e)
             {

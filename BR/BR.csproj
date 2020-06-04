@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="CatastrofesBR.cs" />
     <Compile Include="DistritosBR.cs" />
-    <Compile Include="OcorrenciaBR.cs" />
+    <Compile Include="OcorrenciasBR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

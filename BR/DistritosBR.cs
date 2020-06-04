@@ -1,10 +1,12 @@
-﻿using GestorOcorrencias;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using BO;
+using Dados;
 
 namespace BR
 {
@@ -19,7 +21,7 @@ namespace BR
         {
             try
             {
-                if (ExisteDistrito(d.Nome))
+                if (!ExisteDistrito(d.Nome))
                     return Distritos.InsereDistrito(d);
                 else
                     return 0;
@@ -82,7 +84,10 @@ namespace BR
         {
             try
             {
-                return Distritos.Load(nomeFicheiro);
+                if (File.Exists(nomeFicheiro))
+                    return Distritos.Load(nomeFicheiro);
+                else
+                    return false;
             }
             catch (Exception e)
             {
