@@ -8,3 +8,17 @@
 /home/simaooliveira/ipca/lp2/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.csprojAssemblyReference.cache
 /home/simaooliveira/ipca/lp2/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.exe
 /home/simaooliveira/ipca/lp2/gestorOcorrencias/GestorOcorrencias/obj/x86/Debug/GestorOcorrencias.pdb
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\GestorOcorrencias.exe.config
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\GestorOcorrencias.exe
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\GestorOcorrencias.pdb
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\obj\x86\Debug\GestorOcorrencias.csprojAssemblyReference.cache
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\obj\x86\Debug\GestorOcorrencias.csproj.CoreCompileInputs.cache
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\obj\x86\Debug\GestorOcorrencias.exe
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\obj\x86\Debug\GestorOcorrencias.pdb
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\obj\x86\Debug\GestorOcorrencias.csproj.CopyComplete
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\BO.dll
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\BR.dll
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\Dados.dll
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\BO.pdb
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\BR.pdb
+C:\IPCA\LP2\18833_LP2\GestorOcorrencias\bin\Debug\Dados.pdb
