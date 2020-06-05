@@ -247,8 +247,6 @@ namespace Dados
         private static List<OcorrenciaDB> ocorrencias;
         private static OcorrenciaDB auxOcorrencia;
 
-        public static List<int> teste = new List<int>();
-
         public Ocorrencias()
         {
             totalOcorrencias = 0;
